@@ -1,0 +1,42 @@
+:root {
+/* Colors */
+--main-dark: #212121;
+--main-dark-20:rgba(33, 33, 33, 0.2);
+--secondary-dark: #000000;
+--main-light: #757575;
+--main-light-50: rgba(117, 117, 117, 0.5);
+--primary-light: #FFFFFF;
+--primary-light-10: rgba(255, 255, 255, 0.1);
+--primary-light-30: rgba(255, 255, 255, 0.3);
+--primary-light-60: rgba(255, 255, 255, 0.6);
+--main-accent: #2196F3;
+--main-accent-90: rgba(33, 150, 243, 0.9);
+--secondary-acent: #188CE8;
+--bg-color: #2F303A;
+--bg-color-40: rgba(47, 48, 58, 0.4);
+--bg-color-80: rgba(47, 48, 58, 0.8);
+--bg-color-light: #F5F4FA;
+--header-border: #ECECEC;
+--main-border: #EEEEEE;
+--secondary-dark-6: rgba(0, 0, 0, 0.06);
+--secondary-dark-8: rgba(0, 0, 0, 0.08);
+--secondary-dark-10: rgba(0, 0, 0, 0.1);
+--secondary-dark-12: rgba(0, 0, 0, 0.12);
+--secondary-dark-14: rgba(0, 0, 0, 0.14);
+--secondary-dark-15: rgba(0, 0, 0, 0.15);
+--secondary-dark-16: rgba(0, 0, 0, 0.16);
+--secondary-dark-20: rgba(0, 0, 0, 0.2);
+--bg-hero: #C4C4C4;
+--main-icon-color: #AFB1B8;
+
+/* Fonts */
+--main-font: "Roboto";
+--secondary-font: "Raleway";
+--medium-weight: 500;
+--bold-weight: 700;
+--black-weight: 900;
+
+/* Other */
+--time-dur: 250ms;
+--time-func: cubic-bezier(0.4, 0, 0.2, 1);
+}

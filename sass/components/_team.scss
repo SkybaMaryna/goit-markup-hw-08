@@ -1,0 +1,48 @@
+/**
+  |============================
+  | Team
+  |============================
+*/
+.team {
+    background-color: var(--bg-color-light);
+}
+
+.team__list {
+    display: flex;
+    gap: 30px;
+}
+
+.team__item {
+    width: calc(100% - 90px/4);
+    padding-bottom: 30px;
+
+    box-shadow: 0px 1px 3px var(--secondary-dark-12), 0px 1px 1px var(--secondary-dark-14), 0px 2px 1px var(--secondary-dark-20);
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--primary-light);
+}
+
+.team__foto {
+    margin-bottom: 30px;
+}
+
+.team__employee {
+    margin-bottom: 10px;
+
+    font-weight: var(--medium-weight);
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team__position {
+    margin-bottom: 16px;
+
+    color: var(--main-light);
+
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}

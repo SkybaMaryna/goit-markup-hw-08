@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Портфоліо</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="./index.html" class="logo header__logo"
+          ><span class="logo__color">Web</span>Studio</a
+        >
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__contacts">
+          <li class="header__contacts__item">
+            <a class="header__contacts__link" href="mailto:info@devstudio.com">
+              <svg class="header__contacts__icon" width="16" height="12">
+                <use href="./img/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header__contacts__item">
+            <a class="header__contacts__link" href="tel:+380961111111">
+              <svg class="header__contacts__icon" width="10" height="16">
+                <use href="./img/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="works__title works__title--visually-hidden">
+            Наші роботи
+          </h1>
+          <ul class="filters-list list">
+            <li class="item">
+              <button type="button" class="filter">Усі</button>
+            </li>
+            <li class="item">
+              <button type="button" class="filter">Веб-сайти</button>
+            </li>
+            <li class="item">
+              <button type="button" class="filter">Додатки</button>
+            </li>
+            <li class="item">
+              <button type="button" class="filter">Дизайн</button>
+            </li>
+            <li class="item">
+              <button type="button" class="filter">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="works-list list container">
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/Technocryak.jpg"
+                  alt="Монітор ноутбука із зображенням людей"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Технокряк</h3>
+                <p class="work-type">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/Poster.jpg"
+                  alt="Баскетболісти в момент гри"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Постер New Orlean vs Golden Star</h3>
+                <p class="work-type">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/Seafood.jpg"
+                  alt="Вивіска ресторану з зображенням риби"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Ресторан Seafood</h3>
+                <p class="work-type">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/Prime.jpg"
+                  alt="Навушники"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Проєкт Prime</h3>
+                <p class="work-type">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/Boxes.jpg"
+                  alt="Біла та коричнева коробки"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Проєкт Boxes</h3>
+                <p class="work-type">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/Inspiration.jpg"
+                  alt="Монітор комп'ютера з зображенням мапи світу"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Inspiration has no Borders</h3>
+                <p class="work-type">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/LimitedEdition.jpg"
+                  alt="Відкрита книга з зображенням людей"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Видання Limited Edition</h3>
+                <p class="work-type">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/LAB.jpg"
+                  alt="Бірка з текстом"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Проєкт LAB</h3>
+                <p class="work-type">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" target="_blank" class="work">
+              <div class="work-thumb">
+                <img
+                  class="poster"
+                  src="img/GrowingBusiness.jpg"
+                  alt="Людина працює за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="work-description">
+                <h3 class="work-title">Growing Business</h3>
+                <p class="work-type">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrapper">
+        <div class="contact-wrapper">
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="logo__color">Web</span>Studio</a
+          >
+          <address>
+            <ul class="footer__contacts">
+              <li class="footer__contacts__item">
+                <a
+                  href="https://goo.gl/maps/is1Fzqo8fPEeuyEz9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="footer__contacts__address"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer__contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__contacts__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__contacts__item">
+                <a href="tel:+380961111111" class="footer__contacts__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-wrapper">
+          <strong class="footer__subtitle">Приєднуйтесь</strong>
+          <ul class="socials">
+            <li>
+              <a
+                class="socials__link socials__link--theme-dark"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="socials__icon socials__icon--theme-dark"
+                  width="20"
+                  height="20"
+                  aria-label="Інстаграм"
+                >
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="socials__link socials__link--theme-dark"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="socials__icon socials__icon--theme-dark"
+                  width="20"
+                  height="20"
+                  aria-label="Твітер"
+                >
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="socials__link socials__link--theme-dark"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="socials__icon socials__icon--theme-dark"
+                  width="20"
+                  height="20"
+                  aria-label="Фейсбук"
+                >
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="socials__link socials__link--theme-dark"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="socials__icon socials__icon--theme-dark"
+                  width="20"
+                  height="20"
+                  aria-label="ЛінкедІн"
+                >
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="sign-up-wrapper" name="sign_up">
+          <strong class="footer__subtitle">Підпишіться на розсилку</strong>
+          <div class="sign-up">
+            <label>
+              <input
+                class="sign-up-input"
+                name="user_email"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-button" type="submit">
+              Підписатися
+              <svg class="icon-sign-up" width="24" height="24">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

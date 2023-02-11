@@ -1,0 +1,247 @@
+/**
+  |============================
+  | Modal
+  |============================
+*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--bg-color-40);
+
+    transition: opacity var(--time-dur) var(--time-func), visibility var(--time-dur) var(--time-func), transform var(--time-dur) var(--time-func);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(0.6);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+
+    background: var(--primary-light);
+    box-shadow: 0px 1px 3px var(--secondary-dark-12), 0px 1px 1px var(--secondary-dark-14), 0px 2px 1px var(--secondary-dark-20);
+
+    padding: 40px;
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background: var(--primary-light);
+    border: 1px solid var(--secondary-dark-10);
+    transition: fill var(--time-dur) var(--time-func);
+
+    &:hover,
+    &:focus {
+        fill: var(--main-accent);
+    }
+
+}
+
+.modal-title {
+    font-weight: var(--bold-weight);
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-dark);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.6);
+}
+
+.modal-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.modal-label:nth-child(-n + 3) {
+    margin-bottom: 10px;
+}
+
+.modal-label:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+.modal-label>input,
+.modal-label>textarea {
+    border: 1px solid var(--main-dark-20);
+    border-radius: 4px;
+    transition: border-color var(--time-dur) var(--time-func);
+}
+
+.modal-label>input {
+    padding: 10px 0;
+    padding-left: 35px;
+    padding-right: 5px;
+
+    &:hover,
+    &:focus {
+        border-color: var(--main-accent);
+        outline: 1px solid transparent;
+    }
+
+    &:hover~.modal-icon,
+    &:focus~.modal-icon {
+     fill: var(--main-accent);
+    }
+}
+
+.modal-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    fill: var(--main-dark);
+    transition: fill var(--time-dur) var(--time-func);
+}
+
+.modal-label>textarea {
+    padding: 11px 15px;
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+
+        color: var(--main-light-50);
+    }
+
+    &:hover,
+    &:focus {
+        border-color: var(--main-accent);
+        outline: 1px solid transparent;
+    }
+}
+
+.modal-comment {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: var(--main-light);
+}
+
+.modal-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--primary-light);
+    background-color: var(--main-accent);
+    box-shadow: 0px 4px 4px var(--secondary-dark-15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 52px;
+
+    cursor: pointer;
+
+    font-weight: var(--bold-weight);
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    transition: background-color var(--time-dur) var(--time-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondary-acent);
+    }
+}
+
+/* Custom checkbox */
+
+.modal-label-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.modal-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked+.checkbox-custom {
+        background-color: var(--main-accent);
+        border: none;
+    }
+    
+    &:checked+.checkbox-custom>.checkbox-icon {
+        opacity: 1;
+    }
+}
+
+.checkbox-custom {
+    height: 16px;
+    width: 15px;
+    border: 2px solid var(--main-dark);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--time-dur) var(--time-func), border var(--time-dur) var(--time-func);
+}
+
+.checkbox-icon {
+    opacity: 0;
+    transition: opacity var(--time-dur) var(--time-func);
+    border-radius: 4px;
+}
+
+.modal-text {
+    color: var(--main-light);
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.modal-link {
+    color: var(--main-accent);
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.modal-label-checkbox {
+    margin-bottom: 30px;
+}

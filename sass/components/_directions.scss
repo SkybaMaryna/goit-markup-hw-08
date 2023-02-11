@@ -1,0 +1,36 @@
+/**
+  |============================
+  | What we do
+  |============================
+*/
+.directions {
+    padding-top: 0;
+}
+
+.directions__list {
+    display: flex;
+    gap: 30px;
+}
+
+.directions__item {
+    position: relative;
+}
+
+.directions__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    padding: 27px 0;
+
+    color: var(--primary-light);
+    background-color: var(--bg-color-80);
+
+    font-weight: var(--bold-weight);
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

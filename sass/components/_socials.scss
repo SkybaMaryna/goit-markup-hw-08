@@ -1,0 +1,48 @@
+/**
+  |============================
+  | Socials
+  |============================
+*/
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color var(--time-dur) var(--time-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-accent);
+    }
+
+    &:hover .socials__icon,
+    &:focus .socials__icon {
+        fill: var(--primary-light);
+    }
+        
+    &--theme-dark {
+        background-color: var(--primary-light-10);
+    }
+}
+
+.socials__icon {
+    fill: var(--main-icon-color);
+    transition: fill var(--time-dur) var(--time-func);
+
+    &--theme-dark {
+        fill: var(--primary-light);
+        transition: fill var(--time-dur) var(--time-func);
+    }
+}
+

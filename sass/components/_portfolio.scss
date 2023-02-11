@@ -1,0 +1,137 @@
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+.works__title--visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.filters-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+}
+
+.filter {
+    padding: 6px 22px;
+    min-width: 73px;
+    border-radius: 4px;
+    border: none;
+
+    background-color: var(--bg-color-light);
+
+    font-family: inherit;
+    font-weight: var(--medium-weight);
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+    transition: color var(--time-dur) var(--time-func), background-color var(--time-dur) var(--time-func), box-shadow var(--time-dur) var(--time-func);
+   
+    &:hover,
+    &:focus {
+        color: var(--primary-light);
+        background-color: var(--main-accent);
+        box-shadow: 0px 3px 1px var(--secondary-dark-10), 0px 1px 2px var(--secondary-dark-8), 0px 2px 2px var(--secondary-dark-12);
+    }
+
+}
+
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.work {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    outline: transparent;
+    transition: box-shadow var(--time-dur) var(--time-func);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px var(--secondary-dark-12), 0px 4px 4px var(--secondary-dark-6), 1px 4px 6px var(--secondary-dark-16);
+    }
+
+    &:hover .work-text,
+    &:hover .work-thumb::before,
+    &:focus .work-text,
+    &:focus .work-thumb::before {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.work-description {
+    padding: 20px 24px;
+    border-right: 1px solid var(--main-border);
+    border-bottom: 1px solid var(--main-border);
+    border-left: 1px solid var(--main-border);
+}
+
+.work-thumb {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-accent-90);
+    
+        transform: translateY(120%);
+        transition: transform var(--time-dur) var(--time-func);
+    }
+}
+
+.work-text {
+    position: absolute;
+    top: 63px;
+    left: 24px;
+
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-light);
+
+    transform: translateY(150%);
+    transition: transform var(--time-dur) var(--time-func);
+}
+
+.work-title {
+    margin-bottom: 4px;
+
+    color: var(--main-dark);
+    font-weight: var(--bold-weight);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.work-type {
+    color: var(--main-light);
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}

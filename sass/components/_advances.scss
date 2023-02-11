@@ -1,0 +1,50 @@
+/**
+  |============================
+  | Advances
+  |============================
+*/
+.advances__title--visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.advances__list {
+    display: flex;
+    gap: 30px;
+}
+
+.advances__item {
+    width: calc(100% - 90px/4);
+}
+
+.advances__wrapper {
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+
+    background-color: var(--bg-color-light);
+}
+
+.advances__subtitle {
+    margin-bottom: 10px;
+    font-weight: var(--bold-weight);
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.advances__description {
+    color: var(--main-light);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}

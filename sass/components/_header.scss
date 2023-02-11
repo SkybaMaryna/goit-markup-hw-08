@@ -1,0 +1,53 @@
+/**
+  |============================
+  | Header
+  |============================
+*/
+.header {
+    border-bottom: 1px solid var(--header-border);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.header__contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__contacts__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__contacts__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--main-light);
+    font-weight: var(--medium-weight);
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color var(--time-dur) var(--time-func);
+
+    &:hover,
+    &focus {
+        color: var(--main-accent);
+    }
+    
+    &:hover .header__contacts__icon,
+    &:focus .header__contacts__icon {
+        fill: var(--main-accent);
+    }
+}
+
+.header__contacts__icon {
+    fill: var(--main-light);
+    transition: fill var(--time-dur) var(--time-func);
+}
