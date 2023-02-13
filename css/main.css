@@ -1212,10 +1212,6 @@ ul {
   }
 }
 
-.menu-nav {
-  margin-bottom: 302px;
-}
-
 .menu-nav-item:not(:last-child) {
   margin-bottom: 32px;
 }
