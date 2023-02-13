@@ -4,6 +4,9 @@
   |============================
 */
 .directions {
+    @media screen and (max-width:$pre-desktop) {
+        display: none;
+    }
     padding-top: 0;
 }
 

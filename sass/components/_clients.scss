@@ -1,4 +1,4 @@
-/**
+ /**
   |============================
   | Clients
   |============================
@@ -8,11 +8,22 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    @media screen and (max-width:$desktop){
+        flex-wrap: wrap;
+    }
 }
 
 .clients__item {
-    width: 170px;
+    min-width: 210px;
     height: 92px;
+
+    @media screen and (min-width:$tablet){
+    min-width: 226px;
+    }
+
+    @media screen and (min-width:$desktop){
+    min-width: 170px;}
 }
 
 .clients__link {

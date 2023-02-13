@@ -10,16 +10,31 @@
 .team__list {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width:$pre-tablet) {
+        flex-direction: column;
+    }
+    
+    @media screen and (min-width: $tablet) and (max-width:$pre-desktop) {
+        flex-wrap: wrap;
+    }
 }
 
 .team__item {
-    width: calc(100% - 90px/4);
-    padding-bottom: 30px;
-
+    padding-bottom: 24px;
     box-shadow: 0px 1px 3px var(--secondary-dark-12), 0px 1px 1px var(--secondary-dark-14), 0px 2px 1px var(--secondary-dark-20);
     border-radius: 0px 0px 4px 4px;
-
+    
     background-color: var(--primary-light);
+
+    @media screen and (min-width: $tablet) and (max-width:$pre-desktop) {
+            width: calc((100% - 30px) / 2);
+        }
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 30px;
+    }
+
 }
 
 .team__foto {

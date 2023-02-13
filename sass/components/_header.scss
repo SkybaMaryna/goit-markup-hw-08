@@ -11,43 +11,97 @@
     display: flex;
     align-items: center;
 }
+
 .header__contacts {
-    display: flex;
-    align-items: center;
+    display: block;
     margin-left: auto;
+
+    @media screen and (max-width: $pre-tablet) {
+        display: none;
+    }
+
+    @media screen and (min-width:$desktop) {
+     display: flex;
+     align-items: center;
+    }
 }
 
 .header__contacts__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width:$tablet) and (max-width:$pre-desktop) {
+        margin-bottom: 10px;
+    }
+   
+    @media screen and (min-width: $desktop) {
+        margin-right: 50px;
+    }
 }
 
 .header__contacts__link {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+
+    @media screen and (min-width:$desktop) {
+      gap: 10px;
+    }
 
     color: var(--main-light);
     font-weight: var(--medium-weight);
-    font-size: 14px;
-    line-height: 1.1;
+    font-size: 12px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color var(--time-dur) var(--time-func);
+
+    @media screen and (min-width:$desktop) {
+        font-size: 14px;
+        line-height: 1.1;
+        }
 
     &:hover,
     &focus {
         color: var(--main-accent);
     }
     
-    &:hover .header__contacts__icon,
-    &:focus .header__contacts__icon {
+    &:hover .header__contacts__phoneicon,
+    &:focus .header__contacts__phoneicon,
+    &:hover .header__contacts__mailicon,
+    &:focus .header__contacts__mailicon {
         fill: var(--main-accent);
     }
 }
 
-.header__contacts__icon {
+.header__contacts__phoneicon,
+.header__contacts__mailicon {
     fill: var(--main-light);
     transition: fill var(--time-dur) var(--time-func);
+}
+
+.header__contacts__phoneicon {
+    @media screen and (min-width: $desktop) {
+        width: 10px;
+        height: 16px;
+    }
+
+}
+
+.header__contacts__mailicon {
+    @media screen and (min-width: $desktop) {
+        width: 16px;
+        height: 12px;
+    }
+}
+    
+.header__menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+   
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
 }
