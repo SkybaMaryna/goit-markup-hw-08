@@ -1,4 +1,9 @@
 .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
     position: fixed;
     top: 0;
     left: 0;
@@ -69,10 +74,16 @@
     }
 }
 
-.menu-phone {
-    display: block;
-    margin-bottom: 32px;
+.menu-contacts {
+    margin-bottom: 64px;
+}
 
+.menu-contacts-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+
+.menu-phone {
     text-decoration: none;
 
     font-weight: var(--medium-weight);
@@ -84,9 +95,6 @@
 }
 
 .menu-mail {
-    display: block;
-    margin-bottom: 64px;
-
     text-decoration: none;
 
     font-weight: var(--medium-weight);

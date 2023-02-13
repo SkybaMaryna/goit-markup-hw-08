@@ -37,18 +37,14 @@
 
 .advances__wrapper {
     border-radius: 4px;
-    padding: 25px 190px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 25px 190px;
     margin-bottom: 30px;
 
     background-color: var(--bg-color-light);
-
-    @media screen and (min-width: $tablet) {
-        padding: 25px 142px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        padding: 25px 100px;
-    }
 }
 
 .advances__subtitle {

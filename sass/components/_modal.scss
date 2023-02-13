@@ -28,7 +28,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    width: 450px;
+    max-width: 450px;
     min-height: 609px;
     border-radius: 4px;
 
@@ -38,7 +38,7 @@
     padding: 40px;
 
     @media screen and (min-width: $desktop) {
-        width: 528px;
+        max-width: 528px;
         min-height: 581px;
     }
 }
