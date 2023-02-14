@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: space-between;
 
-
     position: fixed;
     top: 0;
     left: 0;
@@ -82,11 +81,15 @@
     text-decoration: none;
 
     font-weight: var(--medium-weight);
-    font-size: 34px;
+    font-size: 25px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
     color: var(--main-accent);
+
+    @media screen and (min-width: $phone) {
+        font-size: 34px;
+    }
 }
 
 .menu-mail {
@@ -120,9 +123,14 @@
     display: block;
 
     font-weight: var(--medium-weight);
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     
     color: var(--main-accent);
+
+    @media screen and (min-width: $phone) {
+        font-size: 18px;
+    }
+
 }

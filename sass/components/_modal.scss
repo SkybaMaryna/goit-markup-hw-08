@@ -28,7 +28,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    max-width: 450px;
+    width: calc(100% - 30px);
     min-height: 609px;
     border-radius: 4px;
 
@@ -36,6 +36,10 @@
     box-shadow: 0px 1px 3px var(--secondary-dark-12), 0px 1px 1px var(--secondary-dark-14), 0px 2px 1px var(--secondary-dark-20);
 
     padding: 40px;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 450px;
+    }
 
     @media screen and (min-width: $desktop) {
         max-width: 528px;
@@ -237,11 +241,14 @@
 }
 
 .modal-text {
-    color: var(--main-light);
-
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+
+    color: var(--main-light);
+
+    @media screen and (min-width:$phone) {
+    font-size: 12px;}
 
     @media screen and (min-width:$desktop) {
         font-size: 14px;
@@ -250,18 +257,20 @@
 }
 
 .modal-link {
-    color: var(--main-accent);
-
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+
+    color: var(--main-accent);
+
+    @media screen and (min-width:$phone) {
+        font-size: 12px;
+    }
 
     @media screen and (min-width:$desktop) {
         font-size: 14px;
         line-height: 1.7;
     }
-
-
 }
 
 .modal-label-checkbox {

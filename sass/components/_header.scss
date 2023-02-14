@@ -59,7 +59,7 @@
         }
 
     &:hover,
-    &focus {
+    &:focus {
         color: var(--main-accent);
     }
     
@@ -97,7 +97,7 @@
     justify-content: center;
     align-items: center;
     border: none;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
     background-color: transparent;
    
