@@ -36,7 +36,7 @@
         }
 
     //Tablet screen
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: 481px) {
         background-image: linear-gradient(to right, var(--bg-color-40), var(--bg-color-40)),
         url(../img/hero/hero-tab@1x.jpg);
     
@@ -49,7 +49,7 @@
         }
         }
     // Desktop screen
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 769px) {
         background-image: linear-gradient(to right, var(--bg-color-40), var(--bg-color-40)),
         url(../img/hero/hero-desk@1x.jpg);
         
